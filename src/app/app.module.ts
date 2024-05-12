@@ -8,6 +8,7 @@ import { QuestionComponent } from './question/question.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ChangeBgDirective } from './change-bg.directive';
+import { ScoreService } from './service/score.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ChangeBgDirective } from './change-bg.directive';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ScoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
